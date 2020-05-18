@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jacob Burstyn: Entrepenuer, Standup Comedian, Software Developer, Legend</title>
+
+    <!-- includes header-->
+
+    <p>
+        <a href="home.html">
+            <img src="../pictures/logo.png" alt="LOGO" height="300" width="250">
+        </a>
+    </p>
+    <p style="color: purple" align="center" aria-readonly="false">AI BIOTech</p>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <LINK rel="stylesheet" href="../CSS/menu.css" type="text/css">
+    <ul id="navMenu">
+        <li><a href="home.html">Home</a>
+        <li><a href="products.html">Products</a>
+        <li><a href="aboutus.html">About Us</a>
+        <li><a href="../accordian/FAQ.html">FAQS</a>
+        <li class="nav-item">
+            <a class="drop" href="#" id="nav" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Investors
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="seminar.html">Investor Seminar</a>
+                <a class="dropdown-item" href="investor.html">Earnings Reports</a>
+                <a class="dropdown-item" href="investor.html">Shares Calculator</a>
+            </div>
+        </li>
+    </ul>
+    <script src="../menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>function validateForm() {
+        return validateEmail();
+        return validateNumberandText();
+    }
+
+    $('li a').css("color","red")
+    </script>
+    <br><br><br><br>
+    <link rel="stylesheet" href="../CSS/slick-theme.css">
+    <link rel="stylesheet" href="../CSS/slick.css">
+
+</head>
+<!----------------------------------------------------------- end of header----------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+<form id=myForm action="mailOut.html" onsubmit="return validateForm() " method="post">
+    <div class="container">
+        <label email>Enter your email so we can get back to you
+            <input type="text" placeholder="example@gmail.com" name="email" required>  <span style="max-font-size:true" hidden=true id="email">enter a valid email</span>
+        </label><br>
+        <br>
+        <label name>Name
+            <input type="text" placeholder="John Smith" name="name" required>
+        </label><br>
+        <br>
+        <label pnumber> Phone Number
+            <input type="text" placeholder="917-123-4567" id="pnumber" required>  <span style="max-font-size:true" id="tag"></span>
+        </label><br>
+        <label subject >What type of inquiry is this?
+            <input type="text" placeholder="(press, tech issue, business inquiry, etc.)" id="subject" required><span style="max-font-size:true" id="tag2"></span>
+        </label><br>
+        <br>
+        <label description>
+            <textarea name="description" rows="4" cols="50" placeholder=" What would you like to discuss?"></textarea>
+        </label><br>
+        <br>
+    </div>
+    <input type="submit" name="submit" Value="Submit"/>
+</form>
+
+<script>
+    var $ = function(id) {
+        return document.getElementById(id);
+    };
+
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(!re.test(String(email))){
+            document.getElementById('email').hidden = false;
+            return false;
+        }
+        return true;
+    }
+
+    function validateNumberandText() {
+        var number = document.forms["myForm"]["pnumber"].value;
+        if (isNaN(number) || number<100000000 ) {
+            var text = document.createTextNode("Please enter a valid phone number");
+            document.getElementById('tag').appendChild(text);
+            $("pnumber").focus();
+            return false
+        }
+        var a = document.forms["myForm"]["subject"].value;
+
+        if ((/^[a-zA-Z]+$/.test(a))) {
+            var text2 = document.createTextNode("Only words allowed for requests");
+            document.getElementById('tag2').appendChild(text2);
+            $("subject").focus();
+            console.log("got here")
+            return false
+        }
+    }
+
+</script>
+</body>
+
+
+<!--------------------------------------------------------------------------------------footer--------------------------------------------------------------------------------------------------->
+<footer>
+    <P> &copy; 2020 - Jacob Burstyn</P>
+    <P><a href="contactUS.html">Contact US</a></P>
+    any other footer information
+</footer>
+<!---------------------------------------------------------------- end of footer------------------------------------------------------------------------------------------------------------------------------->
+
+</html>

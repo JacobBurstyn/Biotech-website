@@ -1,0 +1,101 @@
+body{
+
+    background: url('../pictures/bkimg.jpg') center,#6747ff;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+a{
+    color: #58ff5b;
+}
+ul{
+    align-self: center;
+    color: #ededed;
+}
+li{
+    color: white;
+}
+P{
+    font-family: "Bookman Old Style", "Segoe UI Light", "Sitka Banner";
+    font-size: xx-large;
+    text-shadow: #333333;
+    color: aliceblue;
+}
+
+h3{
+    color: #ededed;
+}
+
+#navMenu {
+    alignment: center;
+
+    margin:0;
+    padding:0;
+    list-style:none;
+    size: A4;
+    font-family: "Bookman Old Style", "Niagara Solid";
+    text-align:center;
+    line-height:60px;
+}
+
+#navMenu li {
+    float:left;
+
+    /* default background image	*/
+    background: #111111 no-repeat center center;
+
+    /* width and height of the menu item */
+    width:240px;
+    height:70px;
+    text-overline-color: #GGGGGG;
+    font-size: xx-large;
+
+    /* simulate pixel perfect using border */
+    border-left:1px solid #111;
+    border-right:1px solid #333;
+    border-top:1px solid #555;
+    border-bottom:1px solid #333;
+
+    /* must set it as relative, because .hover class top and left with absolute position will be positioned according to li.	*/
+    position:relative;
+}
+
+#navMenu li a {
+    /* z-index must be higher than .hover class */
+    z-index:20;
+
+    /* display as block and set the height according to the height of the menu to make the whole LI clickable	*/
+    display:block;
+    height:70px;
+    position:relative;
+    color: blue;
+}
+
+#navMenu li .hover {
+    /* mouseover image	*/
+    background:url("../pictures/biom.jpg") #5c18ff;
+
+    /* must be postion absolute 	*/
+    position:absolute;
+
+    /*	width, height, left and top to fill the whole LI item	*/
+    width:120px;
+    height:70px;
+    left:0;
+    top:0;
+
+    /* display under the Anchor tag	*/
+    z-index:0;
+
+    /* hide it by default	*/
+    display:none;
+}
+
+#navMenu li.selected {
+    /* selected image	*/
+    background:url(../pictures/car.jpg) no-repeat center center;
+}
+#hometext{
+    color: #5c18ff;
+    font-family: "Bodoni MT Black", fantasy;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI BIOTECH: World leading biotech company</title>
+
+    <!-- includes header-->
+    <p>
+        <a href="home.html">
+            <img src="../pictures/logo.png" alt="LOGO" height="300" width="250">
+        </a>
+    </p>
+    <p style="color: purple" align="center" aria-readonly="false">AI BIOTech</p>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <LINK rel="stylesheet" href="../CSS/menu.css" type="text/css">
+    <ul id="navMenu">
+        <li><a href="home.html">Home</a>
+        <li><a href="products.html">Products</a>
+        <li><a href="aboutus.html">About Us</a>
+        <li><a href="../accordian/FAQ.html">FAQS</a>
+        <li class="nav-item">
+            <a class="drop" href="#" id="nav" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Investors
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="seminar.html">Investor Seminar</a>
+                <a class="dropdown-item" href="investor.html">Earnings Reports</a>
+                <a class="dropdown-item" href="investor.html">Shares Calculator</a>
+            </div>
+        </li>
+    </ul>
+    <script src="../menu.js"></script>
+    <script>
+        $('li a').css("color","red")
+    </script>
+    <br><br><br><br>
+    <link rel="stylesheet" href="../CSS/slick-theme.css">
+    <link rel="stylesheet" href="../CSS/slick.css">
+
+</head>
+<!------------------------------------------------------------- end of header----------------------------------------------------------------------------------------------------------->
+    <body>
+    <div id="app" align="center">
+
+        <p :style="{color: olivedrab}"> Total Cart Item Count {{totalCart}}</p><br><br>
+        <img src="../pictures/bull.jpg" alt="hello" width="294" height="171">
+        <product name="New York,  Augest 25, 2020" stockcount="45" cartcount="0" @addtocart="totalCartAdd" @removefromcart="totalCartRemove"></product>
+        <img src="../pictures/tokyo.jpg" alt="hello" width="250" height="350">
+        <product name="Tokyo,  July 7, 2020" stockcount="6" cartcount="0" @addtocart="totalCartAdd" @removefromcart="totalCartRemove"></product>
+        <img src="../pictures/thelove.webp" alt="hello" width="294" height="171">
+        <product name="Paris June 15, 2020" stockcount="8" cartcount="0" @addtocart="totalCartAdd" @removefromcart="totalCartRemove"></product>
+
+
+    </div>
+
+
+
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../main.js"></script>
+
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>AI BIOTECH: World leading biotech company</title>
+
+    <!-- includes header-->
+    <p>
+        <a href="home.html">
+            <img src="../pictures/logo.png" alt="LOGO" height="300" width="250">
+        </a>
+    </p>
+    <p style="color: purple" align="center" aria-readonly="false">AI BIOTech</p>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../datepick/Minimalist-jQuery-Plugin-For-Birthday-Selector-DOB-Picker/dobpicker.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="../CSS/invester.css">
+    <ul id="navMenu">
+        <li><a href="home.html">Home</a>
+        <li><a href="products.html">Products</a>
+        <li><a href="aboutus.html">About Us</a>
+        <li><a href="../accordian/FAQ.html">FAQS</a>
+        <li class="nav-item">
+            <a class="drop" href="#" id="nav" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Investors
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="seminar.html">Investor Seminar</a>
+                <a class="dropdown-item" href="investor.html">Earnings Reports</a>
+                <a class="dropdown-item" href="investor.html">Shares Calculator</a>
+            </div>
+        </li>
+    </ul>
+    <script src="../menu.js"></script>
+    <script>
+        $('li a').css("color","red")
+    </script>
+    <br><br><br><br>
+    <link rel="stylesheet" href="../CSS/slick-theme.css">
+    <link rel="stylesheet" href="../CSS/slick.css">
+
+</head>
+<!------------------------------------------------------------- end of header----------------------------------------------------------------------------------------------------------->
+<p></p>
+<h1 align="center" style="color: #ff0b17"> Click <a href="seminar.html">here</a> to reserve seats at our summer investor seminars new you</h1>
+<br><br><br><br><br><br><br><br>
+<ul>
+    <li>
+        <p style="color: #ecff44"> Q1 2020: Earnings Report: <br>
+        Reported net sales of $874.3 million, down 7.6% in the first quarter. Organic sales declined 4.3% Reported operating loss was
+        $124.8 million and operating margin was negative 14.3%. Non-GAAP operating income was $130.7 million and operating income margin
+        was 14.9% Reported EPS was a loss of $0.63. Non-GAAP EPS was $0.43 Available liquidity of ~ $1.3 billion CHARLOTTE, N.C., May 08,
+        2020 (GLOBE NEWSWIRE) -- DENTSPLY SIRONA Inc. (“Dentsply Sirona”) (Nasdaq: XRAY), The Dental Solution</p>
+    </li>
+
+
+
+</ul>
+
+    <script>
+        "use strict";
+        var $ = function(id) {
+            return document.getElementById(id);
+        };
+        function calculateShares(shareprice, dollars) {
+            var shares = (shareprice / dollars);
+            shares = shares.toFixed(1);
+            alert("You can purchase "+ shares + " shares at a price of "+ shareprice + " per share when you spend $" +dollars );
+            return shares;
+        };
+        var processEntries = function() {
+            var shareprice = $("shareprice").value;
+            var dollars = $("dollars").value;
+
+            if (isNaN(shareprice) || shareprice <= 0) {
+                alert("shareprice must be numeric and greater than zero");
+                document.getElementById('tag2').hidden = false;
+                $("shareprice").focus();
+            } else if (isNaN(dollars) || dollars <= 0) {
+                alert("dollars must be numeric and greater than zero");
+                document.getElementById('tag').hidden = false;
+                $("dollars").focus();
+            }
+            else {
+                document.getElementById('tag').hidden = true;
+                document.getElementById('tag2').hidden = true;
+                $("shares").value = calculateShares(shareprice, dollars);
+            }
+        };
+        var clearEntries = function() {
+            document.getElementById('tag').hidden = true;
+            document.getElementById('tag2').hidden = true;
+            $("shareprice").value = "";
+            $("dollars").value = "";
+            $("shares").value = "";
+        };
+        window.onload = function() {
+            $("calculate").onclick = processEntries;
+            $("clear").onclick = clearEntries;
+            $("shareprice").ondblclick = clearEntries;
+            $("shareprice").focus();
+        };
+    </script>
+
+
+
+
+
+
+
+    <body style="font-size: x-large">
+
+ <div align="left">
+    <main>
+        <h3>Calculate How Many Shares You Can Purchase at Different price per share</h3>
+        <label for="shareprice">Share Price:</label>
+        <input type="text" id="shareprice"><span style="color: red" id="tag2" hidden = true>shareprice must be numeric and greater than zero</span><br>
+        <label for="dollars">Dollars to Invest</label>
+        <input type="text" id="dollars"> <span style="color: red" id="tag" hidden = true>dollars must be numeric and greater than zero</span><br>
+        <label for="shares">Amount of Shares to aquire</label>
+        <input type="text" id="shares" disabled><br>
+        <label>&nbsp;</label>
+        <input type="button" id="calculate" value="Calculate Shares"><br>
+        <label>&nbsp;</label>
+        <input type="button" id="clear" value="Clear Entries"><br>
+    </main>
+
+ </div>
+    </body>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<script>
+    var $ = function(id) {
+        return document.getElementById(id);
+    };
+    $(document).ready(function () {
+        $("#datepicker").datepicker({
+            minDate: new Date(22,3,44,5,5),
+            maxDate: 222,
+            showOtherMonths: true
+        });
+
+    })
+
+
+</script>
+
+
+<script src="../datepick/Minimalist-jQuery-Plugin-For-Birthday-Selector-DOB-Picker/dobpicker.js"></script>
+
+<body>
+<h3>DOB Picker</h3>
+<label for="dobday"></label>
+<select id="dobday"></select>
+<select id="dobmonth"></select>
+<select id="dobyear"></select>
+<script>
+    $(document).ready(function() {
+        $.dobPicker({
+            daySelector: '#dobday', /* Required */
+            monthSelector: '#dobmonth', /* Required */
+            yearSelector: '#dobyear', /* Required */
+            dayDefault: 'Day', /* Optional */
+            monthDefault: 'Month', /* Optional */
+            yearDefault: 'Year', /* Optional */
+            minimumAge: 12, /* Optional */
+            maximumAge: 80 /* Optional */
+        });
+    });
+</script>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+
+
+</body>
+
+
+
+</html>
+
+

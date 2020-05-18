@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:hidden="http://www.w3.org/1999/xhtml" xmlns:autoOpen="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Jacob Burstyn: Entrepenuer, Standup Comedian, Software Developer, Legend</title>
+
+    <!-- includes header--><p>
+    <a href="home.html">
+        <img src="../pictures/logo.png" alt="LOGO" height="300" width="250">
+    </a>
+</p>
+    <p style="color: purple" align="center" aria-readonly="false">AI BIOTech</p>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <LINK rel="stylesheet" href="../CSS/menu.css" type="text/css">
+    <ul id="navMenu">
+        <li><a href="home.html">Home</a>
+        <li><a href="products.html">Products</a>
+        <li><a href="aboutus.html">About Us</a>
+        <li><a href="../accordian/FAQ.html">FAQS</a>
+        <li class="nav-item">
+            <a class="drop" href="#" id="nav" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Investors
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="seminar.html">Investor Seminar</a>
+                <a class="dropdown-item" href="investor.html">Earnings Reports</a>
+                <a class="dropdown-item" href="investor.html">Shares Calculator</a>
+            </div>
+        </li>
+    </ul>
+    <script src="../menu.js"></script>
+    <script>
+        $('li a').css("color","red")
+
+        // $(document).ready(function() {
+        //     $("#button").button().click()
+        //     {
+        //         $("#dialog").dialog({
+        //            hidden: true
+        //         })
+        //     }
+        // })
+
+    </script>
+
+
+    <div id="dialo" title="Window title">
+        <p> Content of the dialog box</p>
+    </div>
+
+    <input id=open type=button value=Open>
+    <input id=close type=button value=Close>
+
+    <script>
+
+        var $ = function(id) {
+            return document.getElementById(id);
+        };
+        $("#dialo").dialog ({
+            autoOpen : false
+        });
+
+        $("#open").click (function (event)    // Open button Treatment
+        {
+            if ($("#dialo").dialog ("isOpen")) alert ("Already open !");
+            else $("#dialo").dialog ("open");
+        });
+
+        $("#close").click (function (event)   // Close button Treatment
+        {
+            if (!$("#dialo").dialog ("isOpen")) alert ("Already closed !");
+            else $("#dialo").dialog ("close");
+        });
+
+    </script>
+    <br><br><br><br>
+    <link rel="stylesheet" href="../CSS/slick-theme.css">
+    <link rel="stylesheet" href="../CSS/slick.css">
+
+</head>
+
+
+<p>
+
+
+    Our mission is to rapidly innovate in bio-technical solutions in order to attack improve health care for all of mankind.<br>
+
+    We position ourselves at the crossroads of cutting edge artificial intelligence and blockchain technology and integrate it with our  while ensuring continuous efficiencies for processing traditional paper payments and converting them to electronic.
+
+    We take pride in having the quickest implementations for new clients, providing the best customer service in the industry, and delivering intuitive products designed with the user in mind.
+
+
+</p>
+
+<script>
+
+    var $ = function(id) {
+        return document.getElementById(id);
+    };
+    $(document).ready(function () {
+
+        $("p").click(){
+            $("dialog").dialog({
+            this.hide()
+            });
+        }
+
+
+    })
+
+
+</script>
+
+<p class="slider demo">
+
+    <button id="book"></button>
+    <div id="dialog">hello</div>
+
+    <div align="center"><h1>MEET OUR TEAM</h1>
+        <br><br><br><br>
+    <div>
+        <img src="../pictures/ehomes.jpg" width="300" height="300" >
+        <h4>Elithabeth Homles: Director of Medical Research</h4>
+    </div>
+        <br><br>
+        <div>
+            <img src="../pictures/fauch.jpg" width="300" height="400">
+            <h4>Anthony Fauci: Chief of the Laboratory of Immunoregulation (LIR)</h4>
+        </div>
+        <br><br>
+    <div>
+        <img src="../pictures/jacobb.jpg" width="300" height="400" >
+        <h4>Jacob Busrtyn: Chief Executive Officer</h4>
+    </div>
+        <br><br>
+    <div>
+        <img src="../pictures/jonah.jpg" width="300" height="400" >
+        <h4>Yonah Fedlstien: Chief Financial Officer</h4>
+    </div>
+        <br><br>
+    <div>
+        <img src="../pictures/ronny.jpg" width="300" height="400" >
+        <h4>Ronny Chan: Investor Relations</h4>
+    </div>
+        <br><br>
+    <div>
+        <img src="../pictures/mmm.jpg" width="300" height="400">
+        <h4>Marshmello: Marketing</h4>
+    </div>
+        <br><br>
+    <div>
+        <img src="../pictures/fauch.jpg" width="300" height="400">
+        <h4>Anthony Fauci: Chief of the Laboratory of Immunoregulation (LIR)</h4>
+    </div>
+</div>
+
+</p>
