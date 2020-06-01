@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jacob Burstyn: Entrepenuer, Standup Comedian, Software Developer, Legend</title>
+    <title>AI BIOTECH: World leading biotech company</title>
 
     <!-- includes header-->
-
     <p>
         <a href="home.html">
             <img src="../pictures/logo.png" alt="LOGO" height="300" width="250">
@@ -31,7 +30,7 @@
                aria-haspopup="true" aria-expanded="false">
                 Investors
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu" >
                 <a class="dropdown-item" href="seminar.html">Investor Seminar</a>
                 <a class="dropdown-item" href="investor.html">Earnings Reports</a>
                 <a class="dropdown-item" href="investor.html">Shares Calculator</a>
@@ -39,13 +38,8 @@
         </li>
     </ul>
     <script src="../menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script>function validateForm() {
-        return validateEmail();
-        return validateNumberandText();
-    }
-
-    $('li a').css("color","red")
+    <script>
+        $('li a').css("color","red")
     </script>
     <br><br><br><br>
     <link rel="stylesheet" href="../CSS/slick-theme.css">
@@ -53,9 +47,25 @@
 
 </head>
 <!----------------------------------------------------------- end of header----------------------------------------------------------------------------------------------------------->
+<div id="demo">
+    <h1>The XMLHttpRequest Object</h1>
+</div>
 
-
-
+<script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open("GET", "emergency.html", true);
+        xhttp.send();
+    }
+</script>
+<button type="button" onclick="loadDoc()">Emergency Information</button>
+<br><br><br><br>
 
 
 
